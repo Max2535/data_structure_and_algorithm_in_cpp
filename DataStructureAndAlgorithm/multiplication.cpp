@@ -1,8 +1,19 @@
-//
-//  multiplication.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+int multiply(int m,int n){    /// m*n
+    /// base
+    if(n==0){
+        return 0;
+    }
+    /// recursive
+    int smallAns = multiply(m,n-1);  /// m*(n-1)
+
+    /// calculation
+    return smallAns + m;
+}
+
+int main(){
+    cout<<multiply(3,5);
+    return 0;
+}

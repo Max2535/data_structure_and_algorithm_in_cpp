@@ -1,8 +1,15 @@
-//
-//  fractionUse.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include <iostream>
+using namespace std;
+#include "Fraction.cpp"
 
-#include "fractionUse.hpp"
+int main() {
+    Fraction f1(10,5);
+    Fraction f2(15,4);
+
+    Fraction const f3;
+    cout<<f3.getNumerator()<<" "<<f3.getDenominator();
+
+    //f3.setNumerator(10);
+    return 0;
+}
+

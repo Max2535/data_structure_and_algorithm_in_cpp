@@ -1,8 +1,20 @@
-//
-//  geometric_sum.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+double gSum(int k){
+  /// base
+  if(k==0){
+    return 1;
+  }
+  /// recursive
+  double smallAns = gSum(k-1);
+
+  /// calculation
+  return smallAns + 1.0/pow(2,k);
+
+}
+
+int main(){
+    cout<<gSum(3);
+    return 0;
+}

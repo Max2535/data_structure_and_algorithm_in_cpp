@@ -1,8 +1,18 @@
-//
-//  print_all_position_of_element.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+void printAllPos(int a[],int n,int x,int i){
+   if(i==n){
+    return;
+   }
+   if(a[i]==x){
+    cout<<i<<" ";
+   }
+   printAllPos(a,n,x,i+1);
+}
+
+int main(){
+  int a[] = {5,5,6,5,6,7};
+  printAllPos(a,6,7,0);
+  return 0;
+}

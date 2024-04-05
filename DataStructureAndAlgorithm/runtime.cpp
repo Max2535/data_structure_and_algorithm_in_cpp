@@ -1,8 +1,13 @@
-//
-//  runtime.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+int main(){
+
+ int a[100];
+
+ cout<<a[2000];
+
+
+
+   return 0;
+}

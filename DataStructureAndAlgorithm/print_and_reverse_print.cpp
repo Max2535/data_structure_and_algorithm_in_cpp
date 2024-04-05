@@ -1,8 +1,27 @@
-//
-//  print_and_reverse_print.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 31/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+void print(char input[]){
+    if(input[0]=='\0'){
+        return ;
+    }
+    cout<<input[0];
+    print(input+1);
+}
+
+void revPrint(char input[]){
+      if(input[0]=='\0'){
+        return ;
+    }
+   revPrint(input+1);
+   cout<<input[0];
+}
+
+int main(){
+  char input[] = "abc";
+  print(input);
+  cout<<endl;
+  revPrint(input);
+  cout<<endl;
+  return 0;
+}

@@ -1,8 +1,23 @@
-//
-//  power.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 30/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+int power(int x,int n){
+  ///Base Case
+  if(n==0){
+    return 1;
+  }
+
+  ///Recursive
+  int smallOutput = power(x,n-1);
+
+  /// Calculation
+
+  return x*smallOutput;
+
+}
+
+int main(){
+
+     cout<<power(5,3);
+    return 0;
+}

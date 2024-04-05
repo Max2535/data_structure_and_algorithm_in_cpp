@@ -1,8 +1,17 @@
-//
-//  length_lecursively.cpp
-//  DataStructureAndAlgorithm
-//
-//  Created by suppchai kalmro on 31/3/2567 BE.
-//
+#include<iostream>
+using namespace std;
 
-#include <stdio.h>
+int length(char input[]){
+    if(input[0]=='\0'){
+        return 0;
+    }
+    return 1 + length(input+1);;
+}
+
+int main(){
+  char input[100];
+  cin>>input;
+  int l = length(input);
+  cout<<l<<endl;
+  return 0;
+}
